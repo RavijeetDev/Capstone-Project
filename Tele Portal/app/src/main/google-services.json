@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "405418566135",
+    "firebase_url": "https://tele-portal-199611.firebaseio.com",
+    "project_id": "tele-portal-199611",
+    "storage_bucket": "tele-portal-199611.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405418566135:android:03eab1118c2dfe47",
+        "android_client_info": {
+          "package_name": "com.ravijeet.teleportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405418566135-k7f4u3gkagcklvd7q9552los8q3t13qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD73C2ycmzdtEOnDXi-_K1MzXgI4CrB9d0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

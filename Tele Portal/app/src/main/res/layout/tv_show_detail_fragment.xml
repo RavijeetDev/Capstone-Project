@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/backgroundPoster"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimension_250"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <FrameLayout
+            android:id="@+id/trailerIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension_8"
+            android:layout_marginStart="@dimen/dimension_8"
+            android:layout_marginTop="@dimen/dimension_70"
+            android:background="@drawable/play_button_background"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/icomoon"
+                android:padding="@dimen/dimension_10"
+                android:text="@string/trailer_icon_icomoon_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_20" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimension_210"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimension_20"
+            android:layout_marginTop="@dimen/dimension_180"
+            app:cardCornerRadius="@dimen/dimension_4"
+            app:cardElevation="@dimen/dimension_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="@dimen/poster_width"
+                android:layout_height="@dimen/poster_height"
+                android:scaleType="fitXY" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvShowName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension_16"
+            android:layout_marginStart="@dimen/dimension_16"
+            android:layout_marginTop="@dimen/dimension_28"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/error_heading_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/frame"
+            tools:text="Lucifer" />
+
+        <TextView
+            android:id="@+id/ratingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimension_10"
+            android:text="@string/tv_show_ratings_text"
+            android:textColor="@color/tv_show_ratings_text_color"
+            android:textSize="@dimen/text_size_13"
+            app:layout_constraintStart_toStartOf="@+id/tvShowName"
+            app:layout_constraintTop_toBottomOf="@+id/tvShowName" />
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension_8"
+            android:layout_marginStart="@dimen/dimension_8"
+            android:layout_marginTop="@dimen/dimension_12"
+            app:layout_constraintEnd_toEndOf="@+id/tvShowName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ratingText"
+            app:layout_constraintTop_toBottomOf="@+id/tvShowName" />
+
+        <TextView
+            android:id="@+id/releaseDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimension_8"
+            android:text="@string/tv_show_release_date_text"
+            android:textColor="@color/tv_show_release_text_color"
+            android:textSize="@dimen/text_size_13"
+            app:layout_constraintStart_toStartOf="@+id/ratingText"
+            app:layout_constraintTop_toBottomOf="@+id/ratingText" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimension_8"
+            android:textSize="@dimen/text_size_13"
+            app:layout_constraintBaseline_toBaselineOf="@+id/releaseDateText"
+            app:layout_constraintStart_toEndOf="@+id/releaseDateText" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimension_15"
+            android:text="@string/tv_show_description_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/descriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension_20"
+            android:layout_marginTop="@dimen/dimension_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/description"
+            app:layout_constraintTop_toBottomOf="@+id/description"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/photosHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimension_15"
+            android:text="@string/tv_show_photos_heading_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintStart_toStartOf="@+id/descriptionTextView"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/photoList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension_20"
+            android:layout_marginTop="@dimen/dimension_10"
+            app:layout_constraintEnd_toEndOf="@+id/frame"
+            app:layout_constraintStart_toStartOf="@+id/photosHeading"
+            app:layout_constraintTop_toBottomOf="@+id/photosHeading" />
+
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/imagesHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimension_15"
+            android:text="@string/tv_show_cast_heading_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintStart_toStartOf="@+id/photoList"
+            app:layout_constraintTop_toBottomOf="@+id/photoList" />
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/imagesList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension_20"
+            android:layout_marginTop="@dimen/dimension_10"
+            app:layout_constraintEnd_toEndOf="@+id/frame"
+            app:layout_constraintStart_toStartOf="@+id/imagesHeading"
+            app:layout_constraintTop_toBottomOf="@+id/imagesHeading" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/seasonsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimension_10"
+            android:text="@string/tv_show_seasons_heading_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintEnd_toEndOf="@+id/frame"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imagesList"
+            app:layout_constraintTop_toBottomOf="@+id/imagesList" />
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/seasonListView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimension_10"
+            android:layout_marginBottom="@dimen/margin_item"
+            android:layout_marginEnd="@dimen/dimension_20"
+            android:layout_marginTop="@dimen/dimension_10"
+            app:layout_constraintBottom_toBottomOf="@id/frame"
+            app:layout_constraintEnd_toEndOf="@+id/frame"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/seasonsHeading"
+            app:layout_constraintTop_toBottomOf="@+id/seasonsHeading"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimension_16"
+            android:layout_marginTop="@dimen/dimension_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back_white" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension_16"
+            android:layout_marginTop="@dimen/dimension_16"
+            android:fontFamily="@font/icomoon"
+            android:text="@string/share_icon"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_20"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/backgroundPoster" />
+
+        <TextView
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimension_16"
+            android:layout_marginTop="@dimen/dimension_16"
+            android:fontFamily="@font/icomoon"
+            android:text="@string/dislike_icon"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_20"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/share"
+            app:layout_constraintTop_toTopOf="@+id/backgroundPoster" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/dimension_8">
+
+    <TextView
+        android:id="@+id/favorite_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin_widget"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18"
+        android:text="@string/favorite_title"
+        android:textStyle="bold"
+        android:padding="@dimen/dimension_10"
+        android:gravity="center" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_show_list"
+        android:layout_below="@id/favorite_text"/>
+
+
+</RelativeLayout>

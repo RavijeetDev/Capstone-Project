@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#262626</color>
+    <color name="colorPrimaryDark">#181818</color>
+    <color name="colorAccent">#27aa6d</color>
+    <color name="default_background_cover">#879388</color>
+    <color name="play_icon">#4fffffff</color>
+    <color name="youtube_video_background">#E6000000</color>
+    <color name="cast_name_text_color">#a4a4a4</color>
+    <color name="episode_details_text_color">#868686</color>
+    <color name="season_item_image_background_color">#232323</color>
+    <color name="tv_show_ratings_text_color">#8f8f8f</color>
+    <color name="tv_show_release_text_color">#8f8f8f</color>
+    <color name="widget_name_text_color">#606060</color>
+    <color name="widget_year_text_color">#9c9c9c</color>
+</resources>
