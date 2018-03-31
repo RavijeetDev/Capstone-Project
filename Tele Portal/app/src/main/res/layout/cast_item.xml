@@ -12,7 +12,8 @@
         android:id="@+id/cast_item"
         android:layout_width="@dimen/dimension_110"
         android:layout_height="@dimen/dimension_110"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:contentDescription="@string/cast_name_desc"/>
 
     <TextView
         android:layout_width="wrap_content"

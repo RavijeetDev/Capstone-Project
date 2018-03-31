@@ -66,7 +66,8 @@ public class TvShowSeasonDetailAdapter extends RecyclerView.Adapter<TvShowSeason
 
         int episodeNumber = position+1;
         holder.episodePoster.setContentDescription(episode.getEpisodeName());
-        holder.episodeName.setText( episodeNumber+ ". " + episode.getEpisodeName());
+        String text = episodeNumber + ". " + episode.getEpisodeName();
+        holder.episodeName.setText(text);
         holder.episodeAirDate.setText(Utility.getFormattedDate(episodeAirDateFormat, episode.getAirDate()));
         holder.episodeOverView.setText(episode.getOverview());
 

@@ -32,4 +32,17 @@
     <string name="first_screen">First Screen Opened</string>
     <string name="banner_app_id">ca-app-pub-1285121147929174~8177784219</string>
     <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="backdrop_desc">Main Toolbar Backdrop</string>
+    <string name="youtube_cancel_button_desc">Youtube Video Cancel Button</string>
+    <string name="cast_name_desc">Image of the Cast</string>
+    <string name="episode_poster_desc">Poster of the Episode</string>
+    <string name="gallery_button_desc">Image Gallery Download Button</string>
+    <string name="gallery_image_desc">Gallery Image Item</string>
+    <string name="photo_desc">Photo Image View</string>
+    <string name="season_poster_desc">Season Poster Image</string>
+    <string name="tv_show_poster_desc">TV Show Poster Image</string>
+    <string name="poster_bg_desc">TV Show Poster Background</string>
+    <string name="tv_show_banner_desc">TV Show Banner Image</string>
+    <string name="back_button_desc">Back Button</string>
+    <string name="menu_title">Favorite</string>
 </resources>

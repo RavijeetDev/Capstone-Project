@@ -18,5 +18,6 @@
         android:layout_height="@dimen/dimension_50"
         android:padding="@dimen/dimension_10"
         android:id="@+id/cancelImage"
-        android:src="@drawable/ic_action_cancel"/>
+        android:src="@drawable/ic_action_cancel"
+        android:contentDescription="@string/youtube_cancel_button_desc"/>
 </RelativeLayout>

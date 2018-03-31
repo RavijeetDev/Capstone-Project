@@ -22,7 +22,8 @@
                 android:id="@+id/episodePoster"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimension_250"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/episode_poster_desc"/>
 
             <LinearLayout
                 android:layout_width="match_parent"

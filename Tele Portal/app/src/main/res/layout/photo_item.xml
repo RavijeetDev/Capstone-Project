@@ -12,6 +12,7 @@
         android:id="@+id/photo_item"
         android:layout_width="@dimen/dimension_180"
         android:layout_height="@dimen/dimension_115"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:contentDescription="@string/photo_desc"/>
 
 </android.support.v7.widget.CardView>
